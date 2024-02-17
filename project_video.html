@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" >
+    <meta name="author" content="Devcrud">
+    <title>Jay Moundekar</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-o9JNtQ0ySPT7ikJylX2U5cdeHbsJd1HQxv/1VHpvJt5OG06fw1mCNtBI20zE3sK9aSTcw5emPZ3uU+UZfR9Vjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/pvendors/themify-icons/css/themify-icons.css">
+    <!-- main stylesheet -->
+	<link rel="stylesheet" href="assets/css/project_video.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link"><i class="ti-home"></i>  Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About</a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Jay Moundekar</h5>
+                        <div class="brand-subtitle">Data Analyst | Python Programmer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#project" class="nav-link">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <!--Video Section-->
+    <section class="section" >
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Project Video</h2>
+            <div class="row">
+                
+                <div class="col-md-6">
+
+                    <div class="card" id="score" style="display: none;">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Predicting Student Percentage of Marks Based on Study Hours</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            
+                            <video controls controlsList="nodownload" src="assets/video/score.mp4" width="800" height="500"></video>
+                              
+                        </div>
+                    </div>
+
+                    <div class="card" id="cluster" style="display: none;">
+                        <div class="card-header">
+                             <div class="mt-2">
+                                 <h4>Predicting the Optimum Number of Cluster in the "Iris DataSet" and Representing it Visually</h4>
+                                 <span class="line"></span>  
+                             </div>
+                         </div>
+                         <div class="card-body">
+                             
+                             <video controls controlsList="nodownload" src="assets/video/Cluster.mp4" width="800" height="500"></video>
+                               
+                         </div>
+                     </div>
+
+                     <div class="card" id="spotify" style="display: none;">
+                        <div class="card-header">
+                             <div class="mt-2">
+                                 <h4>Analyzing Spotify and YouTube Songs Using Python & MySQL</h4>
+                                 <span class="line"></span>  
+                             </div>
+                         </div>
+                         <div class="card-body">
+                             
+                             <video controls controlsList="nodownload" src="assets/video/" width="800" height="500"></video>
+                               
+                         </div>
+                     </div>
+
+                     <div class="card" id="mcq" style="display: none;">
+                        <div class="card-header">
+                             <div class="mt-2">
+                                 <h4>MCQ EXAM APPLICATION</h4>
+                                 <span class="line"></span>  
+                             </div>
+                         </div>
+                         <div class="card-body">
+                             
+                             <video controls controlsList="nodownload" src="assets/video/MCQ.mp4" width="800" height="500"></video>
+                               
+                         </div>
+                     </div>
+
+                     <div class="card" id="covid" style="display: none;">
+                        <div class="card-header">
+                             <div class="mt-2">
+                                 <h4>Exploring India's COVID-19 Journey: A Case Study Analysis</h4>
+                                 <span class="line"></span>  
+                             </div>
+                         </div>
+                         <div class="card-body">
+                             
+                             <video controls controlsList="nodownload" src="assets/video/" width="800" height="500"></video>
+                               
+                         </div>
+                     </div>
+
+                     <div class="card" id="courier" style="display: none;">
+                        <div class="card-header">
+                             <div class="mt-2">
+                                 <h4>Courier Company Charged Bill Analysis</h4>
+                                 <span class="line"></span>  
+                             </div>
+                         </div>
+                         <div class="card-body">
+                             
+                             <video controls controlsList="nodownload" src="assets/video/" width="800" height="500"></video>
+                               
+                         </div>
+                     </div>
+
+                </div>
+
+              
+                
+
+            </div>
+        </div>
+    </section>
+
+  
+
+    <script>
+        // Retrieve the selected card id from localStorage
+        var selectedCardId = localStorage.getItem('selectedCard');
+        // Show the corresponding card
+        if (selectedCardId) {
+            var selectedCard = document.getElementById(selectedCardId);
+            if (selectedCard) {
+                selectedCard.style.display = 'block';
+            }
+        }
+    </script>
+    
+    
+     
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h3 class="text-light mb-5 font-weight-normal">Thank You for Visiting !!</h3>
+        </div>
+    </section>
+    
+
+	
+
+</body>
+</html>
