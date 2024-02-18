@@ -279,25 +279,7 @@
                     <div class="img-holder">
                         <img src="assets/imgs/logi.jpg">
                     </div>
-                    <div class="content-holder">
-                        <h6 class="title">Courier Company Charged Bill Analysis</h6>
-
-                        <p class="post-details">
-                            <b>Technologies Used : Python <br>Libraries : NumPy, Pandas</b>
-                        </p>
-                        
-                        <p>Utilized Python to ensure data cleanliness for a more effective analysis process.
-                            <br>
-                            Worked on different datasets given by the "X Company" and the "Courier Company" to find the actual rates of each shipment.
-                            <br>
-                            Derived insights about  how many items are correctly charged, overcharged, and 
-                            undercharged by the courier company. 
-                            This insight empowers the organization to make informed decisions and potentially
-                             address issues with the courier company.</p>
-                        
-                        <a href="" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
+                   
 
              <!-- blog-card -->
                 <div class="blog-card">
@@ -319,7 +301,7 @@
                             Enabling accurate prediction and aiding educators in understanding the potential academic outcomes for students
                             based on their study habits.</p>
 
-                        <a href="https://drive.google.com/file/d/12fM3zd4x8US-D3otyV3Y6folhxpot3wN/view?usp=sharing" target="blank" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="project_video.html#score" onclick="showCard('score')"  class="read-more">Read more <i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
              
@@ -340,7 +322,7 @@
                             Using the Unsupervised Learning technique, the model was trained on a dataset encompassing the features of iris flowers of different species.
                             <br>
                             Predicting the optimum number of cluster to group the flowers of same species based on their features.</p>
-                        <a href="https://drive.google.com/file/d/1LwV8AJhMU0E4UAWTyeda6pJDBuiUaLNC/view?usp=sharing" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="project_video.html#cluster" onclick="showCard('cluster')"  class="read-more">Read more <i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
 
@@ -362,7 +344,7 @@
                             Implemented a user-friendly interface with Tkinter for easy navigation and a seamless user experience during
                             the examination.</p>
                         
-                        <a href="https://drive.google.com/file/d/1vbUUVpmt6V2GDZgsyIhTavSFZtSqQ4Zm/view?usp=sharing" target="blank" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="project_video.html#mcq" onclick="showCard('mcq')"  class="read-more">Read more <i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
 
@@ -413,6 +395,13 @@
         </div>
     </section>
      <!-- End of project section -->
+
+<script>
+        function showCard(cardId) {
+            // Save the selected card id to localStorage
+            localStorage.setItem('selectedCard', cardId);
+        }
+    </script>
 
 
 	
