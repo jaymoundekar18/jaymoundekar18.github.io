@@ -68,6 +68,9 @@
                     <li class="nav-item">
                         <a href="#project" class="nav-link">Projects</a>
                     </li>
+		    <li class="nav-item apbtn">
+                        <button class="btn btn-outline-danger" id="appreciationBtn" onclick="handleClick()">Appreciate <i class="fas fa-thumbs-up"></i></button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -406,7 +409,34 @@
         }
     </script>
 
+<script>
+    // Function to handle button click event
+    function handleClick() {
+        // Check if button is clicked for the first time in the session
+        if (!sessionStorage.getItem('clickCount')) {
+            sessionStorage.setItem('clickCount', 1); // Set initial count to 1
+        } else {
+            let count = parseInt(sessionStorage.getItem('clickCount')); // Get current count
+            count++; // Increment count
+            sessionStorage.setItem('clickCount', count); // Update count in session storage
+        }
+        // Display count on the button
+        document.getElementById('appreciationBtn').innerText = `Appreciation Count [${sessionStorage.getItem('clickCount')}]`;
+        // Disable the button to restrict further clicks in the session
+        document.getElementById('appreciationBtn').disabled = true;
+    }
 
+    // Function to display initial count
+    window.onload = function() {
+        // Check if count exists in session storage
+        if (sessionStorage.getItem('clickCount')) {
+            // Display count on the button
+            document.getElementById('appreciationBtn').innerText = `Appreciation Count [${sessionStorage.getItem('clickCount')}]`;
+            // Disable the button if clicked once
+            document.getElementById('appreciationBtn').disabled = true;
+        }
+    };
+</script>
 	
     <section class="section bg-dark py-5">
         <div class="container text-center">
