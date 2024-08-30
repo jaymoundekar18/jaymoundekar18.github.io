@@ -5088,6 +5088,11 @@ input[type="button"].btn-block {
     margin-left: 12.5%;
     align-content: center;
 }
+.card-body iframe {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
 
 .card-title {
   margin-bottom: 0.75rem;
