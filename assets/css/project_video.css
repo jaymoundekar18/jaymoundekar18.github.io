@@ -5090,7 +5090,7 @@ input[type="button"].btn-block {
 }
 .card-body iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 100%;
 }
 
