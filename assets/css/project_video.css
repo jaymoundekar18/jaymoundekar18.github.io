@@ -626,7 +626,7 @@ pre code {
       transform: translateX(0); /* Start at the beginning */
   }
   100% {
-      transform: translateX(-50%); /* Move left by half the total width */
+      transform: translateX(-75%); /* Move left by half the total width */
   }
 }
 
