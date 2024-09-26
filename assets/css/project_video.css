@@ -570,6 +570,71 @@ pre code {
 
 }
 
+
+
+.marquee {
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* Positioning context for inner */
+}
+
+.marquee-inner {
+  display: flex; /* Use flex to lay out items in a row */
+  animation: marquee 30s linear infinite; /* Animation for scrolling effect */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  margin-right: 20px; /* Space between items */
+  border: 1px solid #a7a4a48d;
+  padding: 10px; /* Add some padding for spacing */
+}
+
+.video-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the contents within the anchor */
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+}
+
+.video-item img {
+  width: 280px; 
+  height: auto; /* Maintain aspect ratio */
+  max-height: 250px; /* Optional: Limit the height */
+  display: block; /* Prevent space below images */
+  margin: 10px 0; /* Top and bottom margin for spacing */
+}
+
+.video-item h4 {
+  text-align: center; /* Center text */
+  margin: 10px 0; /* Centered margins for h4 */
+  font-size: 25px;
+  max-width: 100%; /* Prevent text from exceeding container */
+  word-wrap: break-word; /* Allow text to wrap onto the next line */
+  color: #F85C70;
+}
+
+.video-item h4:hover {
+  color: #772d9f;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0); /* Start at the beginning */
+  }
+  100% {
+      transform: translateX(-50%); /* Move left by half the total width */
+  }
+}
+
+
+
+
+
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
