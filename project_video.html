@@ -177,7 +177,86 @@
         </div>
     </section>
 
-  
+  <!--Other Projects Video Section-->
+   <section class="section py-5">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">Other</span> Projects Videos</h2>
+            <div class="marquee">
+                <div class="marquee-inner">
+                    
+                    
+                    <div class="video-item">
+                        <a href="project_video.html#sentiment" onclick="showCard('sentiment')">
+                            <img src="assets/imgs/sentiment.jpg" alt="Video Title 1">
+                            <h4>Sentiment Analysis on Twitter Data</h4>
+                        </a>
+                    </div>
+                    <div class="video-item">
+                        <a href="project_video.html#score" onclick="showCard('score')">
+                            <img src="assets/imgs/book.jpeg" alt="Video Title 2">
+                            <h4>Predicting Student Percentage</h4>
+                        </a>
+                    </div>
+                    <div class="video-item">
+                        <a href="project_video.html#cluster" onclick="showCard('cluster')">
+                            <img src="assets/imgs/iris.jpeg" alt="Video Title 3">
+                            <h4>Cluster Prediction on Iris Dataset</h4>
+                        </a>
+                    </div>
+                    
+                    <div class="video-item">
+                        <a href="project_video.html#mcq" onclick="showCard('mcq')">
+                            <img src="assets/imgs/exam.jpg" alt="Video Title 3">
+                            <h4>MCQ Exam Application</h4>
+                        </a>
+                    </div>
+
+                    <div class="video-item">
+                        <a href="project_video.html#sentiment" onclick="showCard('sentiment')">
+                            <img src="assets/imgs/sentiment.jpg" alt="Video Title 1">
+                            <h4>Sentiment Analysis on Twitter Data</h4>
+                        </a>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+
+    
+    
+    <script>
+        function showCard(cardId) {
+    
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.style.display = 'none';
+    });
+
+    
+    const selectedCard = document.getElementById(cardId);
+    if (selectedCard) {
+        selectedCard.style.display = 'block';
+    }
+
+    
+    localStorage.setItem('selectedCard', cardId);
+}
+
+
+var selectedCardId = localStorage.getItem('selectedCard');
+
+
+if (selectedCardId) {
+    showCard(selectedCardId); 
+}
+
+    </script>
 
     <script>
         // Retrieve the selected card id from localStorage
