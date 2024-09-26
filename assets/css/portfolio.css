@@ -11439,6 +11439,11 @@ pre .code {
   border-radius: 12%;
 }
 
+.navbar .brand .brand-img:hover {
+    border: 1px solid #772d9f;
+}
+
+
 .navbar .brand .brand-txt {
   position: relative;
   bottom: -20px;
