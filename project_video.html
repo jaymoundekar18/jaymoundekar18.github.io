@@ -14,7 +14,53 @@
     <link rel="stylesheet" href="assets/pvendors/themify-icons/css/themify-icons.css">
     <!-- main stylesheet -->
 	<link rel="stylesheet" href="assets/css/project_video.css">
+
+<!-- pop-up style start -->
+<style>
+  #mobilePopup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #444;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  @media (max-width: 1024px) {
+    #mobilePopup.show, #overlay.show {
+      display: block;
+    }
+  }
+
+  .close-btn {
+    margin-top: 15px;
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+  }
+</style>
+
+<!-- pop-up style end -->
+	
 </head>
+
+	
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
@@ -307,9 +353,35 @@ if (selectedCardId) {
         </div>
 	    
     </section>
-    
 
+
+<!-- pop-up overlay start -->
 	
+<div id="overlay"></div>
 
+<div id="mobilePopup">
+  <p>This website is best viewed on desktop for a full experience.</p>
+  <div class="close-btn" onclick="closePopup()">Close</div>
+</div>
+<script>
+  function isMobileOrTablet() {
+    return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+  }
+
+  function closePopup() {
+    document.getElementById('mobilePopup').classList.remove('show');
+    document.getElementById('overlay').classList.remove('show');
+  }
+
+  // Show popup only on mobile/tablet
+  window.onload = function () {
+    if (isMobileOrTablet()) {
+      document.getElementById('mobilePopup').classList.add('show');
+      document.getElementById('overlay').classList.add('show');
+    }
+  };
+</script>	
+<!-- pop-up overlay end -->
+	
 </body>
 </html>
