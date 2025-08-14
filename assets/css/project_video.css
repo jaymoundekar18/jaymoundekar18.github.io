@@ -579,7 +579,7 @@ pre code {
 
 .marquee-inner {
   display: flex; /* Use flex to lay out items in a row */
-  animation: marquee 30s linear infinite; /* Animation for scrolling effect */
+  animation: marquee 10s linear infinite; /* Animation for scrolling effect */
   white-space: nowrap; /* Prevent line breaks */
 }
 
