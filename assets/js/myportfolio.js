@@ -16,7 +16,7 @@
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
 
-        if (this.hash !== "") {
+        if (this.getAttribute('href').startsWith('#') && this.hash !== "") {
 
             event.preventDefault();
 
