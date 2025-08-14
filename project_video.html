@@ -342,6 +342,12 @@ var selectedCardId = localStorage.getItem('selectedCard');
 
 if (selectedCardId) {
     showCard(selectedCardId); 
+	const otherVideos = document.querySelectorAll('.video-item a');
+        otherVideos.forEach(link => {
+            if (link.getAttribute('href').includes('#' + selectedCardId)) {
+                link.closest('.video-item').remove();
+            }
+        });
 }
 
     </script>
