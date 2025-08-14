@@ -590,9 +590,13 @@ pre code {
   margin-right: 20px; /* Space between items */
   border: 1px solid #a7a4a48d;
   padding: 10px; /* Add some padding for spacing */
+  width: 350px; 
+  height: 350px; 
 }
 
 .video-item a {
+  text-wrap: auto;  
+  text-align: center;  
   display: flex;
   flex-direction: column;
   align-items: center; /* Center the contents within the anchor */
@@ -5155,7 +5159,6 @@ input[type="button"].btn-block {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 1.25rem;
-    margin-left: 12.5%;
     align-content: center;
 }
 .card-body iframe {
