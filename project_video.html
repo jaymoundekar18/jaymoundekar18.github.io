@@ -338,16 +338,19 @@
 
 
 var selectedCardId = localStorage.getItem('selectedCard');
+		if (window.location.pathname.includes("project_video.html")) {
+    var selectedCardId = localStorage.getItem('selectedCard');
+    if (selectedCardId) {
+        showCard(selectedCardId);
 
-
-if (selectedCardId) {
-    showCard(selectedCardId); 
-	const otherVideos = document.querySelectorAll('.video-item a');
+        // Remove the same card from the "Other Projects Videos" section
+        const otherVideos = document.querySelectorAll('.video-item a');
         otherVideos.forEach(link => {
             if (link.getAttribute('href').includes('#' + selectedCardId)) {
                 link.closest('.video-item').remove();
             }
         });
+    }
 }
 
     </script>
